@@ -23,14 +23,56 @@ function value(){
 function schet(){
 if (Symbol == '*'){
    rezultat = parseInt(num1) * parseInt(num2) 
-   console.log(`Сумма ${num1} * ${num2} = ${rezultat}`)
+   if (isNaN(rezultat)) {  
+    console.log('Ошибка: значение не является числом');
+}else{
+    if (rezultat =='Infinity') {  
+        console.log("Divide by zero error")
+    }else{ 
+        if(rezultat > 10000000){
+            console.log("слишком большое число")
+        }else{
+            if(rezultat < -10000000){
+                console.log("слишком Маленькое число")
+            }else{
+   console.log(`Сумма ${num1} * ${num2} = ${rezultat}`)}}}}
 }else if (Symbol =='/'){
     rezultat = parseInt(num1) / parseInt(num2)
-    console.log(`Сумма ${num1} / ${num2} = ${rezultat}`)
+    if (isNaN(rezultat)) {  
+        console.log('Ошибка: значение не является числом');
+    }else{
+        if (rezultat =='Infinity') {  
+            console.log("Divide by zero error")
+        }else{
+            if(rezultat > 10000000){
+                console.log("слишком большое число")
+            }else{
+                if(rezultat < -10000000){
+                    console.log("слишком большое число")
+                }else{
+       console.log(`Сумма ${num1} / ${num2} = ${rezultat}`)}}}}
 }else if (Symbol == '+'){
     rezultat = parseInt(num1) + parseInt(num2)
-    console.log(`Сумма ${num1} + ${num2} = ${rezultat}`)
+    if (isNaN(rezultat)) {  
+        console.log('Ошибка: значение не является числом');
+    }else{
+        if(rezultat > 10000000){
+            console.log("слишком большое число")
+        }else{
+            if(rezultat < -10000000){
+                console.log("слишком большое число")
+            }else{
+       console.log(`Сумма ${num1} + ${num2} = ${rezultat}`)}}}
 }else if (Symbol == '-'){
     rezultat = parseInt(num1) - parseInt(num2)
-    console.log(`Сумма ${num1} - ${num2} = ${rezultat}`)
+    if (isNaN(rezultat)) {  
+        console.log('Ошибка: значение не является числом');
+    }else{
+        if(rezultat > 10000000){
+            console.log("слишком большое число")
+        }else{
+            if(rezultat < -10000000){
+                console.log("слишком большое число")
+            }else{
+       console.log(`Сумма ${num1} - ${num2} = ${rezultat}`)}}}
 }}
